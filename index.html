@@ -5,27 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>TechWave</title>
   </head>
   <body class="body">
     <header>
-      <nav class=" mt-6 border-b border-gray-50">
-        <div class="flex justify-between items-center w-full max-w-[1600px] px-5 py-5 m-auto md:px-12">
-          <img class="w-230px h-32px" src="./B13-A02-TechWave/assets/TechWave.png" alt="">
-         
-          <div class=" hidden lg:flex text-gray-500 font-semibold items-center gap-5">
-            <ul><a href="">About</a></ul>
-            <ul><a href="">Episodes</a></ul>
-            <ul><a href="">Hosts</a></ul>
+      <nav class="mt-6 border-b border-gray-50">
+        <div
+          class="flex justify-between items-center w-full max-w-[1600px] px-5 py-5 m-auto md:px-12">
+          <img class="w-230px h-32px"src="./B13-A02-TechWave/TechWave.png"alt="" />
+
+          <div class="hidden lg:flex text-gray-500 font-semibold items-center gap-5">
+            <ul>
+              <a href="">About</a>
+            </ul>
+            <ul>
+              <a href="">Episodes</a>
+            </ul>
+            <ul>
+              <a href="">Hosts</a>
+            </ul>
           </div>
-           <button class="hidden lg:block w-[132px]  border-2 cursor-pointer p-3 btn-primary">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
-           <img class=" lg:hidden cursor-pointer h-7 w-7" src="./B13-A02-TechWave/assets/hamburger-menu.png" alt="Menu">
+          <button
+            class="hidden lg:block w-[132px] border-2 cursor-pointer p-3 btn-primary"
+          >
+            Subscribe <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <img
+            class="lg:hidden cursor-pointer h-7 w-7"
+            src="./B13-A02-TechWave/hamburger-menu.png"
+            alt="Menu"
+          />
         </div>
       </nav>
     </header>
+    <main class="relative w-full min-h-screen flex items-center justify-center bg-[url('./B13-A02-TechWave/hero-bg.png')] bg-cover bg-center bg-no-repeat text-white overflow-hidden px-4">
+      <div class="relative z-10 flex flex-col items-center text-center gap-6 w-full max-w-4xl mx-auto" >
+        <div class="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] flex items-center justify-center shrink-0">
+          <img class="absolute inset-0 w-full h-full object-contain" src="./B13-A02-TechWave/hero-circle.png"alt=""/>
+
+          <img class="relative z-10 w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] object-contain"
+            src="./B13-A02-TechWave/microphone.png"alt=""/>
+
+          <span class="absolute top-6 right-6 sm:top-8 sm:right-6 bg-[#1DD100] text-white font-bold text-xs sm:text-sm px-3 py-1 rounded-full z-20 shadow-lg border border-white/20">New</span></div>
+
+        <div class="space-y-3 px-2"> <h1 class="text-4xl sm:text-6xl md:text-7xl font-bold tracking-wide">TechWave</h1>
+          <p class="text-sm sm:text-lg text-gray-300 max-w-lg mx-auto leading-relaxed">
+            Your daily dose of tech insights, productivity hacks, and personal growth</p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full pt-2">
+          <button class="flex items-center justify-center gap-2 btn-primary text-white font-bold rounded-full px-8 py-3 w-full sm:w-auto min-w-[200px] h-[44px] shadow-lg"><i class="fa-brands fa-spotify text-xl"></i>Listen On Spotify</button>
+
+          <button class="flex items-center justify-center gap-2 border-2 btn-secondary font-bold rounded-full px-8 py-3 w-full sm:w-auto min-w-[200px]">
+            <i class="fa-regular fa-envelope text-xl"></i> Subscribe</button>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

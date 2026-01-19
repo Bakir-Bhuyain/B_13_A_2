@@ -23,10 +23,30 @@ body {
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 20px;
+    padding: 5px;
+    width: 201px;
+    cursor: pointer;
 }
-
 .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(251, 9, 180, 0.4);
+}
+.btn-secondary {
+
+    /* background: #00FF88; */
+    color: #00FF88;
+    border: 2px solid #00FF88;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20px;
+    padding: 5px;
+    width: 147px;
+    height: 44px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(1, 60, 28, 0.985);
+    /* background-color: #00FF88; */
 }
 

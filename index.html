@@ -13,10 +13,17 @@
   </head>
   <body class="body">
     <header>
-      <nav>
-        <div>
-          <img src="./B13-A02-TechWave/assets/TechWave.png" alt="">
-          <button class="w-135px border-2 cursor-pointer p-4 btn-primary">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+      <nav class=" mt-6 border-b border-gray-50">
+        <div class="flex justify-between items-center w-full max-w-[1600px] px-5 py-5 m-auto md:px-12">
+          <img class="w-230px h-32px" src="./B13-A02-TechWave/assets/TechWave.png" alt="">
+         
+          <div class=" hidden lg:flex text-gray-500 font-semibold items-center gap-5">
+            <ul><a href="">About</a></ul>
+            <ul><a href="">Episodes</a></ul>
+            <ul><a href="">Hosts</a></ul>
+          </div>
+           <button class="hidden lg:block w-[132px]  border-2 cursor-pointer p-3 btn-primary">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+           <img class=" lg:hidden cursor-pointer h-7 w-7" src="./B13-A02-TechWave/assets/hamburger-menu.png" alt="Menu">
         </div>
       </nav>
     </header>

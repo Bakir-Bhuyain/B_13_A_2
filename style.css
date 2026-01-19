@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+    --color-body: #1A0B2E;
+    --color-section: #230E3D;
+    --color-card: #351165;
+    --color-neon: #00FF88;
+    --color-white: #FAFAFA;
+}
+
+
+body {
+    background-color: var(--color-body);
+    /* color: var(--color-white); */
+    font-family: 'Inter', sans-serif;
+}
+
+
+.btn-primary {
+
+    background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 50%, #9100F8 100%);
+    color: white;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(251, 9, 180, 0.4);
+}
+
